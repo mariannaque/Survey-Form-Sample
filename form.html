@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Survey Form Sample</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Catamaran"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="formStyle.css" />
+  </head>
+  <body>
+    <div id="form-content">
+      <p id="description">Fill in the fields below</p>
+      <form id="survey-form"> 
+        <label for="name" id="name-label"><span>*</span>Name:</label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter your full name"
+          required
+        />
+
+        <label for="email" id="email-label"><span>*</span>Email:</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          required
+        />
+
+        <label for="number" id="number-label"><span>*</span>Number:</label>
+        <input type="number" id="number" placeholder="Enter your number" />
+
+        <label id="dropdown-label"><span>*</span>Choose an option:</label>
+        <select id="dropdown">
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option selected>Option 3</option>
+          <option>Option 4</option>
+          <option>Option 5</option>
+        </select>
+
+        <label id="radio-label"><span>*</span>Choose an option:</label>
+        <div id="radios-group">
+          <input type="radio" name="radio-group" value="option1" />Option 1<br />
+          <input type="radio" name="radio-group" value="option2" />Option 2<br />
+          <input type="radio" name="radio-group" value="option3" />Option 3
+        </div>
+
+        <label id="checkbox-label"><span>*</span>Choose an option:</label>
+        <div id="checkbox-group">
+          <input type="checkbox" name="check-group" value="option1" />Option
+          1<br />
+          <input type="checkbox" name="check-group" value="option2" />Option
+          2<br />
+          <input type="checkbox" name="check-group" value="option3" />Option 3
+        </div>
+
+        <label id="textarea-label" for="textarea">Comments:</label>
+        <textarea
+          id="textarea"
+          rows="2"
+          placeholder="Enter your comments here..."
+        ></textarea>
+        <br />
+        <button type="submit" id="submit">Submit</button>                
+      </form>
+      
+    </div>
+  </body>
+</html>

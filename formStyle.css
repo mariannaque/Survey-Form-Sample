@@ -1,0 +1,157 @@
+body{
+    background-color: rgb(189, 189, 248);
+    font-family: 'Catamaran', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+  #title{
+    text-align: center;
+    
+  }
+  #description{
+    text-align: center;
+    font-size: 2rem;
+    
+  }
+  #form-content{    
+    width: 60%;
+    background-color: #ffffff;
+    box-shadow: 2px 1px 5px 1px #adabaa;   
+    font-size: 1rem;
+    padding-bottom: 40px;
+  }
+  #survey-form{    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 3fr 3fr 2fr 1fr 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+  }  
+  #name-label{
+      justify-self: end;
+  }
+  #email-label{
+    justify-self: end;
+  }
+    #number-label{
+        justify-self: end;
+    }
+    #dropdown-label{
+        justify-self: end;
+    }
+    #radio-label{
+        justify-self: end;
+    }
+    #checkbox-label{
+        justify-self: end;
+    }
+    #textarea-label{
+        justify-self: end;
+    }
+    input[type="text"]{
+        justify-self: start;
+        font-family: 'Catamaran', sans-serif;
+        font-size: 1rem;
+    }
+    input[type="email"]{
+        justify-self: start;
+        font-family: 'Catamaran', sans-serif;
+        font-size: 1rem;
+    }
+    input[type="number"]{
+        justify-self: start;
+        font-family: 'Catamaran', sans-serif;
+        font-size: 1rem;
+    }
+    #dropdown{
+        justify-self: start;
+        font-family: 'Catamaran', sans-serif;
+        font-size: 1rem;
+    }
+    #textarea{
+        justify-self: start;
+        width: 80%;
+        font-family: 'Catamaran', sans-serif;
+        font-size: 1rem;
+    }
+    button[type="submit"]{
+        justify-self: start;
+        border-radius: 5px;
+        width: 7rem;
+        background-color: rgb(220, 220, 221);
+        font-family: 'Catamaran', sans-serif;
+        font-size: 1rem;
+    }
+    span{
+        color: red;
+    }
+    @media (max-width: 740px){
+        #form-content{
+            width: 90%;
+        }
+    }
+    @media (max-width: 470px){
+        input[type="text"]{
+            width: 80%;
+            font-size: 0.8rem;
+        }
+        input[type="email"]{
+            width: 80%;
+            font-size: 0.8rem;
+        }
+        input[type="number"]{
+            width: 80%;
+            font-size: 0.8rem;
+        }
+        #description{
+            font-size: 1.5rem;            
+        }
+        #textarea{
+            font-size: 0.8rem;
+        }
+        #dropdown{
+            font-size: 0.8rem;
+        }
+        button[type="submit"]{
+            
+            font-size: 0.8rem;
+        }
+        #form-content{
+            font-size: 0.8rem;
+        }
+    }
+    @media (max-width: 300px){
+        input[type="text"]{
+            width: 90%;
+            font-size: 0.6rem;
+        }
+        input[type="email"]{
+            width: 90%;
+            font-size: 0.6rem;
+        }
+        input[type="number"]{
+            width: 90%;
+            font-size: 0.6rem;
+        }
+        #description{
+            font-size: 1rem;
+        }
+        #form-content{
+            font-size: 0.6rem;
+        }
+        #textarea{
+            width: 90%;
+            font-size: 0.6rem;
+        }
+        #dropdown{
+            font-size: 0.6rem;
+        }
+        button[type="submit"]{
+            width: 90%;
+            font-size: 0.6rem;
+        }
+    }
+   
